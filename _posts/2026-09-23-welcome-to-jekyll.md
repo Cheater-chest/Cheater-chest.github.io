@@ -31,3 +31,41 @@ bundle exec jekyll serve
 3. 仓库 Settings → Pages → Source 选择 `main` 分支的根目录（`/`），保存后等待构建完成。
 
 祝写作愉快！
+
+---
+
+## 本框架已内置：KaTeX 公式
+
+行内公式用 `\( ... \)` 包裹，例如 `\(E = mc^2\)` 效果为 \(E = mc^2\)。
+
+块级公式用 `$$ ... $$` 单独成段：
+
+$$
+\sum_{i=1}^{n} i = \frac{n(n+1)}{2}
+$$
+
+## 洛谷风格提示块
+
+写法：引用块 + 换行加 `{: .tip}`（依次替换 tip / warning / danger / success）：
+
+> 这是一条提示，适合补充说明。
+{: .tip}
+
+> 注意这里的边界条件！
+{: .warning}
+
+## 折叠块
+
+```html
+<details>
+  <summary>点击展开</summary>
+  这里是折叠内容。
+</details>
+```
+
+效果：
+
+<details>
+  <summary>点击展开</summary>
+  这里是折叠内容。
+</details>
