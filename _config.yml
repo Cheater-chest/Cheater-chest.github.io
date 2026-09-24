@@ -4,11 +4,11 @@
 # ============================================================
 
 # —— 站点信息 ——
-title: "username 的博客"
-author: username
-email: "username@example.com"
+title: "ZSYZ_CPY 的博客"
+author: Cheater-chest
+email: "junyihao957o6@qq.com"
 description: >-
-  在这里写一句关于你和这个博客的简介，会用于首页 meta 与 RSS 描述。
+  I will upload sone articles from Luogu and others.
 
 # —— 部署地址 ——
 # 用户页（仓库名 username.github.io）：https://username.github.io
@@ -19,7 +19,7 @@ repository: "username/blogs"
 
 # —— 语言与时区 ——
 lang: zh-CN
-timezone: Asia/Shanghai
+timezone: Asia/Guangdong
 
 # —— 写作与构建 ——
 markdown: kramdown
