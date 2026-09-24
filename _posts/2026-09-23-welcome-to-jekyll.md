@@ -4,7 +4,7 @@ title: 欢迎来到我的博客
 date: 2026-09-23 21:00:00 +0800
 categories: [随笔]
 tags: [jekyll, github-pages]
-author: username
+author: ZSYZ_CPY
 ---
 
 这是用 Jekyll + GitHub Pages 搭建的第一篇博文，也是一份速查手册。
