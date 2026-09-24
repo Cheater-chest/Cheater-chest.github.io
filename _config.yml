@@ -1,0 +1,46 @@
+# ============================================================
+# Jekyll 站点主配置（GitHub Pages 用）
+# 部署前必改：把下面所有 username 替换成你的 GitHub 用户名
+# ============================================================
+
+# —— 站点信息 ——
+title: "username 的博客"
+author: username
+email: "username@example.com"
+description: >-
+  在这里写一句关于你和这个博客的简介，会用于首页 meta 与 RSS 描述。
+
+# —— 部署地址 ——
+# 用户页（仓库名 username.github.io）：https://username.github.io
+# 项目页（普通仓库）：https://username.github.io/仓库名
+url: "https://username.github.io"
+baseurl: ""                # 项目页部署时改为 "/仓库名"，例如 "/blogs"
+repository: "username/blogs"
+
+# —— 语言与时区 ——
+lang: zh-CN
+timezone: Asia/Shanghai
+
+# —— 写作与构建 ——
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+excerpt_separator: "\n\n"
+
+# —— 插件（均在 GitHub Pages 白名单内）——
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+
+# —— 分页 ——
+paginate: 5
+paginate_path: "/page:num/"
+
+# —— 不参与构建的文件/目录 ——
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

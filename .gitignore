@@ -1,0 +1,12 @@
+# Jekyll 构建产物与缓存
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# 依赖
+vendor/
+
+# 系统文件
+.DS_Store
+Thumbs.db
