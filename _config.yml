@@ -13,9 +13,9 @@ description: >-
 # —— 部署地址 ——
 # 用户页（仓库名 username.github.io）：https://username.github.io
 # 项目页（普通仓库）：https://username.github.io/仓库名
-url: "https://username.github.io"
+url: "https://Cheater-chest.github.io"
 baseurl: ""                # 项目页部署时改为 "/仓库名"，例如 "/blogs"
-repository: "username/blogs"
+repository: "Cheater-chest/blogs"
 
 # —— 语言与时区 ——
 lang: zh-CN
