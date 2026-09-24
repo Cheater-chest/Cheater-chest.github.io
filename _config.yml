@@ -24,7 +24,7 @@ timezone: Asia/Guangdong
 # —— 写作与构建 ——
 markdown: kramdown
 highlighter: rouge
-permalink: /:year/:month/:day/:title/
+permalink: /:title/
 excerpt_separator: "\n\n"
 
 # —— 插件（均在 GitHub Pages 白名单内）——
