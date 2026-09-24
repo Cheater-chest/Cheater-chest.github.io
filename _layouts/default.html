@@ -8,5 +8,31 @@
     </main>
     {% include footer.html %}
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+
+    <!-- KaTeX：延迟加载核心库 + 自动渲染 -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // 情况一：kramdown 原样输出 $$...$$ 与 \(...\)，由 auto-render 处理
+        if (window.renderMathInElement) {
+          renderMathInElement(document.body, {
+            delimiters: [
+              { left: "$$", right: "$$", display: true },
+              { left: "\\(", right: "\\)", display: false }
+            ],
+            throwOnError: false
+          });
+        }
+        // 情况二：kramdown 把公式转成了 <script type="math/tex"> 标签，手动渲染兜底
+        document.querySelectorAll('script[type="math/tex; mode=display"], script[type="math/tex"]').forEach(function (el) {
+          if (!window.katex) return;
+          var display = el.getAttribute("type").indexOf("mode=display") !== -1;
+          var span = document.createElement("span");
+          katex.render(el.textContent, span, { displayMode: display, throwOnError: false });
+          el.parentNode.replaceChild(span, el);
+        });
+      });
+    </script>
   </body>
 </html>
