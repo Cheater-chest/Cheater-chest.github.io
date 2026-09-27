@@ -23,4 +23,26 @@ layout: default
       <a class="next" href="{{ page.next.url | relative_url }}">{{ page.next.title }} →</a>
     {% endif %}
   </nav>
+
+  {% if site.giscus.repo and site.giscus.repo-id %}
+  <section class="post-comments">
+    <h2 class="comments-title">评论</h2>
+    <div class="giscus"></div>
+    <script src="https://giscus.app/client.js"
+      data-repo="{{ site.giscus.repo }}"
+      data-repo-id="{{ site.giscus.repo-id }}"
+      data-category="{{ site.giscus.category | default: 'Announcements' }}"
+      data-category-id="{{ site.giscus.category-id }}"
+      data-mapping="{{ site.giscus.mapping | default: 'pathname' }}"
+      data-strict="0"
+      data-reactions-enabled="{{ site.giscus.reactions-enabled | default: '1' }}"
+      data-emit-metadata="{{ site.giscus.emit-metadata | default: '0' }}"
+      data-input-position="{{ site.giscus.input-position | default: 'top' }}"
+      data-theme="preferred_color_scheme"
+      data-lang="{{ site.giscus.lang | default: 'zh-CN' }}"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </section>
+  {% endif %}
 </article>
