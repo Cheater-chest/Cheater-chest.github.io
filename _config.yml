@@ -38,6 +38,17 @@ plugins:
 paginate: 5
 paginate_path: "/page:num/"
 
+giscus:
+  repo: "username/blogs"   # 形如 用户名/仓库名
+  repo-id: ""
+  category: "Announcements"
+  category-id: ""
+  mapping: pathname
+  reactions-enabled: "1"
+  emit-metadata: "0"
+  input-position: top
+  lang: zh-CN
+
 # —— 不参与构建的文件/目录 ——
 exclude:
   - README.md
