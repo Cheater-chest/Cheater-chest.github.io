@@ -41,7 +41,7 @@ paginate_path: "/page:num/"
 giscus:
   repo: "Cheater-chest/Cheater-chest.github.io"   # 形如 用户名/仓库名
   repo-id: "R_kgDOUoih2A"
-  category: "Announcements"
+  category: "Q&A"
   category-id: "DIC_kwDOUoih2M4DGgmw"
   mapping: url
   reactions-enabled: "1"
