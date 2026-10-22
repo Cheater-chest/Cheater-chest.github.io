@@ -13,7 +13,7 @@
         }).formatToParts(d);
         var o = {};
         p.forEach(function (x) { o[x.type] = x.value; });
-        return o.year + "-" + o.month + "-" + o.day + " " + o.hour + ":" + o.minute + ":" + o.second;
+        return o.year + "-" + o.month + "-" + o.day + " " + o.hour + ":" + o.minute + ":" + o.second + "\n";
       }
       function tick() { el.textContent = fmt(new Date()) + " (GMT+8)"; }
       tick();
