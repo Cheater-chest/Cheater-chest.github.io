@@ -1,5 +1,25 @@
 <footer class="site-footer">
   <div class="wrapper">
+    <span id="gmt8-clock"></span>
+    <script>
+    (function () {
+      var el = document.getElementById("gmt8-clock");
+      function fmt(d) {
+        var p = new Intl.DateTimeFormat("zh-CN", {
+          timeZone: "Asia/Shanghai",
+          year: "numeric", month: "2-digit", day: "2-digit",
+          hour: "2-digit", minute: "2-digit", second: "2-digit",
+          hour12: false
+        }).formatToParts(d);
+        var o = {};
+        p.forEach(function (x) { o[x.type] = x.value; });
+        return o.year + "-" + o.month + "-" + o.day + " " + o.hour + ":" + o.minute + ":" + o.second;
+      }
+      function tick() { el.textContent = fmt(new Date()) + " (GMT+8)"; }
+      tick();
+      setInterval(tick, 1000);   // 每秒刷新；只看分钟可改成 60000
+    })();
+    </script>
     <span>© {{ site.time | date: "%Y" }} {{ "ZSYZ_CPY" }} · Powered by
       <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>
       &amp;
