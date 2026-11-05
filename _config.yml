@@ -51,7 +51,6 @@ giscus:
 
 # —— 不参与构建的文件/目录 ——
 exclude:
-  - README.md
   - Gemfile
   - Gemfile.lock
   - vendor
