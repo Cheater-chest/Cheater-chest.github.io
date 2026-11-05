@@ -13,7 +13,7 @@ description: >-
 # —— 部署地址 ——
 # 用户页（仓库名 username.github.io）：https://username.github.io
 # 项目页（普通仓库）：https://username.github.io/仓库名
-url: "https://Cheater-chest.github.io"
+url: "https://zsjzqwq.great_site.net"
 baseurl: ""                # 项目页部署时改为 "/仓库名"，例如 "/blogs"
 repository: "Cheater-chest/blogs"
 
